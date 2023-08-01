@@ -2326,7 +2326,7 @@ ul.agileits_social_list li {
     .view,
     .view .mask,
     .view .content {
-        height: 196px;
+        height: 360px;
     }
 
     .second-effect:hover .mask {
@@ -4408,7 +4408,11 @@ a.at300m .at4-icon {
     position: relative;
     overflow: hidden;
 }
-
+@media (min-width: 769px) {
+    #carousel {
+        width: 50%;
+    }
+}
 .slide {
     width: 100%;
     height: 500px;
@@ -4434,4 +4438,7 @@ a.at300m .at4-icon {
 .center-image img {
     max-width: 100%; /* 防止图片超出其容器 */
     max-height: 100%; /* 防止图片超出其容器 */
+}
+.product-space{
+    height: 220px;
 }

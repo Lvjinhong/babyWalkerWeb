@@ -1,67 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<title>Home</title>
-	<!-- for-mobile-apps -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- //for-mobile-apps -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"> </script>
-	<!-- //js -->
-	<!--FlexSlider-->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-	<script defer src="js/jquery.flexslider.js"> </script>
-	<script type="text/javascript">
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				start: function (slider) {
-					$('body').removeClass('loading');
-				}
-			});
-		});
-	</script>
-	<!--End-slider-script-->
-	<!-- font-awesome icons -->
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<!-- //font-awesome icons -->
-	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-	<link
-		href='http://fonts.googleapis.comcss?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-		rel='stylesheet' type='text/css'>
+    <style>
+        .product-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<div class="col-md-5 wthree_services_bottom_right">
-			<section class="slider">
-				<div class="flexslider">
-
-				<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1413px, 0px, 0px);"><li class="clone" style="width: 471px; float: left; display: block;">
-							<div class="w3_agile_services_bottom_right_grid2">
-								<p class="w3layouts_head_slide"> 脚部安全绑带</p>
-							</div>
-						</li>
-						<li style="width: 471px; float: left; display: block;" class="">
-							<div class="w3_agile_services_bottom_right_grid">
-								<p class="w3layouts_head_slide"> 阳光洗澡椅</p>
-							</div>
-						</li>
-						<li style="width: 471px; float: left; display: block;" class="">
-							<div class="w3_agile_services_bottom_right_grid1">
-								<p class="w3layouts_head_slide"> 骨盆安全绑带</p>
-							</div>
-						</li>
-					</ul></div><ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
-			</section>
-		</div>
-
+    <div class="product-card">
+        <img class="product-image" src="your-product-image-url" alt="Product Image">
+        <h2 class="product-name">Product Name</h2>
+        <p class="product-description">This is a description of the product. It includes details about the product features and specifications.</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
 </body>
-
-
 </html>

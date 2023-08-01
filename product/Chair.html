@@ -1113,34 +1113,26 @@
                 <!-- Needed to activate contextual links -->
 
                 <div class="ds-product-top">
-                    <div class="field field--name-breadcrumbs field--type-ds field--label-hidden">
-                        <div class="field__items">
-                            <div class="field__item even">
-                                <div class="easy-breadcrumb"><a href="https://www.medifab.co.nz/"
-                                                                class="easy-breadcrumb_segment easy-breadcrumb_segment-front"></a><span
-                                        class="easy-breadcrumb_segment-separator"> ➙ </span><a
-                                        href="https://www.medifab.co.nz/products"
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-1"></a><span
-                                        class="easy-breadcrumb_segment-separator"> ➙ </span><a
-                                        href="https://www.medifab.co.nz/products/bathroom-aids"
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-2">
-                                </a><span class="easy-breadcrumb_segment-separator"> ➙ </span><span
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-title">
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
+
+
+                    <div id="carousel" class="flexslider flexslider-processed ">
+                        <div class="slide" style="background-image: url('../images/1.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/2.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/3.jpg');"></div>
                     </div>
 
+                    <script>
+                        let slides = document.querySelectorAll('#carousel .slide');
+                        let currentSlide = 0;
+                        let slideInterval = setInterval(nextSlide, 3000);
 
-                    <!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
-                    <div id="flexslider-3" class="flexslider flexslider-processed">
-                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
-                            class="flex-active-slide"><img src="../images/products/Chair/PPT第1页图片1.jpg" alt=""
-                                                           title=""></li>
+                        function nextSlide() {
+                            slides[currentSlide].style.opacity = 0;
+                            currentSlide = (currentSlide + 1) % slides.length;
+                            slides[currentSlide].style.opacity = 1;
+                        }
+                    </script>
 
-
-                    </div>
                     <div id="node-product-full-group-product-details"
                          class=" group-product-details field-group-div">
                         <div class="field field--name-title field--type-d.ds-product-top .flexsliders field--label-hidden">
@@ -1151,7 +1143,7 @@
                             </div>
                         </div>
                         <!--                        <h3></h3>-->
-                        <div style="height: 20px;"></div>
+
                         <div
                                 class="field field--name-field-product-description field--type-text-long field--label-hidden">
                             <div class="field__items">
@@ -1191,7 +1183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="height: 20px;"></div>
+                        <div><br><br></div>
                         <div class="field field--name-product-links field--type-ds field--label-hidden">
                             <div class="field__items">
                                 <div class="field__item even">
@@ -1218,6 +1210,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="ds-product-bottom-wrapper">
                     <div class="ds-product-bottom">
@@ -1260,7 +1253,7 @@
 
                                 </div>
                             </div>
-                            <div style="height: 40px;"></div>
+                            <div class="product-space"></div>
                             <div
                                     class="view view-product-features view-id-product_features view-display-id-default view-dom-id-092a43a4077c985aca08cdf29e64b690">
                                 <div class="view-header">
@@ -1362,7 +1355,7 @@
 
                             </div>
                             <!-- END OUTPUT from 'sites/all/modules/views/theme/views-view.tpl.php' -->
-                            <div style="height: 40px;"></div>
+                            <div class="product-space"></div>
                             <div
                                     class="view view-product-features view-id-product_features view-display-id-default view-dom-id-092a43a4077c985aca08cdf29e64b690">
                                 <div class="view-header">
@@ -1387,11 +1380,11 @@
 
                                                     <div class="views-field views-field-nothing">
                                                         <span
-                                                            class="field-content">
+                                                                class="field-content">
 
 <!--                                                                    <h4>45° Tilt-In-Space</h4>-->
-                                                        <!--                                                                <img src="../images/products/Chair/PPT第3页图片1.png"-->
-                                                        <!--                                                                     height="1062" width="1239"/></a>-->
+                                                            <!--                                                                <img src="../images/products/Chair/PPT第3页图片1.png"-->
+                                                            <!--                                                                     height="1062" width="1239"/></a>-->
                                                       <p><br></p>
                                                             <h4>
                                                         安全保证，加固承重
@@ -1443,7 +1436,7 @@
                                                     <!-- END OUTPUT from 'sites/all/modules/views/theme/views-view-fields.tpl.php' -->
                                                 </li>
 
-                                                       <li style="width:219.75pxpx; float: left; display: block;">
+                                                <li style="width:219.75pxpx; float: left; display: block;">
 
                                                     <!-- THEME DEBUG -->
                                                     <!-- CALL: theme('views_view_fields') -->
@@ -1477,28 +1470,28 @@
                                 <div class="field__items">
                                     <div class="field__item even field-content">
                                         <p>
-<h2>
-产品细节
-                                    </h2>
+                                        <h2>
+                                            产品细节
+                                        </h2>
                                         <br>
                                         <h4>用心之处，彰显品质</h4>
-<br>
-                                            <img src="../images/products/Chair/PPT第4页图片1.jpg" height="1125"
-                                                 width="1480"/></p>
+                                        <br>
+                                        <img src="../images/products/Chair/PPT第4页图片1.jpg" height="1125"
+                                             width="1480"/></p>
 
                                         <p>
 
                                             <img src="../images/products/Chair/PPT第1页图片2.png"
-                                                style="width: 450px; height: 675px;"/>&nbsp;
+                                                 style="width: 450px; height: 675px;"/>&nbsp;
                                             &nbsp; &nbsp;
 
                                             <img src="../images/products/Chair/PPT第1页图片3.png"
                                                  style="width: 450px; height: 675px;"/></p>
 
-                                        <p >
-                                            <h3>多场景适用</h3>
-  <img src="../images/products/Chair/changjing.jpg"
-                                                 /></p>
+                                        <p>
+                                        <h3>多场景适用</h3>
+                                        <img src="../images/products/Chair/changjing.jpg"
+                                        /></p>
                                         </p>
                                     </div>
                                 </div>
@@ -1525,7 +1518,7 @@
                                                     <div class="flex-viewport"
                                                          style="overflow: hidden; position: relative;">
                                                         <ul class="slides"
-                                                            style="width: 3400%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                            style="width: 120%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                             <li
                                                                     style="width: 175px; float: left; display: block;">
 

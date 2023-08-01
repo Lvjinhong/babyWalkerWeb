@@ -1130,11 +1130,28 @@
                 <div class="ds-product-top">
 
                     <!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
-                    <div id="flexslider-3" class="flexslider flexslider-processed">
-                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
-                            class="flex-active-slide"><img src="../images/products/bind/骨盆安全绑带/host.jpg" alt=""
-                                                           title=""></li>
+<!--                    <div id="flexslider-3" class="flexslider flexslider-processed">-->
+<!--                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"-->
+<!--                            class="flex-active-slide"><img src="../images/products/bind/骨盆安全绑带/host.jpg" alt=""-->
+<!--                                                           title=""></li>-->
+<!--                    </div>-->
+           <div id="carousel" class="flexslider flexslider-processed ">
+                        <div class="slide" style="background-image: url('../images/1.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/2.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/3.jpg');"></div>
                     </div>
+
+                    <script>
+                        let slides = document.querySelectorAll('#carousel .slide');
+                        let currentSlide = 0;
+                        let slideInterval = setInterval(nextSlide, 3000);
+
+                        function nextSlide() {
+                            slides[currentSlide].style.opacity = 0;
+                            currentSlide = (currentSlide + 1) % slides.length;
+                            slides[currentSlide].style.opacity = 1;
+                        }
+                    </script>
 
                     <div id="node-product-full-group-product-details"
                          class=" group-product-details field-group-div">
@@ -1424,7 +1441,7 @@
                                                     <div class="flex-viewport"
                                                          style="overflow: hidden; position: relative;">
                                                         <ul class="slides"
-                                                            style="width: 3400%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                            style="width: 120%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                             <li
                                                                     style="width: 175px; float: left; display: block;">
 

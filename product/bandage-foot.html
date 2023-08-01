@@ -1113,34 +1113,32 @@
                 <!-- Needed to activate contextual links -->
 
                 <div class="ds-product-top">
-                    <div class="field field--name-breadcrumbs field--type-ds field--label-hidden">
-                        <div class="field__items">
-                            <div class="field__item even">
-                                <div class="easy-breadcrumb"><a href="https://www.medifab.co.nz/"
-                                                                class="easy-breadcrumb_segment easy-breadcrumb_segment-front"></a><span
-                                        class="easy-breadcrumb_segment-separator"> ➙ </span><a
-                                        href="https://www.medifab.co.nz/products"
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-1"></a><span
-                                        class="easy-breadcrumb_segment-separator"> ➙ </span><a
-                                        href="https://www.medifab.co.nz/products/bathroom-aids"
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-2">
-                                </a><span class="easy-breadcrumb_segment-separator"> ➙ </span><span
-                                        class="easy-breadcrumb_segment easy-breadcrumb_segment-title">
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!-- END OUTPUT from 'sites/all/modules/flexslider/theme/flexslider.tpl.php' -->
-                    <div id="flexslider-3" class="flexslider flexslider-processed">
-                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"
-                            class="flex-active-slide"><img src="../images/products/Chair/PPT第1页图片1.jpg" alt=""
-                                                           title=""></li>
+                    <!--                    <div id="flexslider-3" class="flexslider flexslider-processed">-->
+                    <!--                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"-->
+                    <!--                            class="flex-active-slide"><img src="../images/products/Chair/PPT第1页图片1.jpg" alt=""-->
+                    <!--                                                           title=""></li>-->
+                    <!--                    </div>-->
 
-
+                    <div id="carousel" class="flexslider flexslider-processed ">
+                        <div class="slide" style="background-image: url('../images/1.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/2.jpg');"></div>
+                        <div class="slide" style="background-image: url('../images/3.jpg');"></div>
                     </div>
+
+                    <script>
+                        let slides = document.querySelectorAll('#carousel .slide');
+                        let currentSlide = 0;
+                        let slideInterval = setInterval(nextSlide, 3000);
+
+                        function nextSlide() {
+                            slides[currentSlide].style.opacity = 0;
+                            currentSlide = (currentSlide + 1) % slides.length;
+                            slides[currentSlide].style.opacity = 1;
+                        }
+                    </script>
+
                     <div id="node-product-full-group-product-details"
                          class=" group-product-details field-group-div">
                         <div class="field field--name-title field--type-ds field--label-hidden">
@@ -1162,26 +1160,25 @@
                                                 &nbsp;&nbsp;&nbsp;&nbsp;脚趾定位绑带可以固定使用者的脚趾到轮椅踏板上，更好地适应不同的身体形态，提供更加个性化的支撑和安全保障。
 
 
-
                                             </p>
                                             <p>
                                                 &nbsp;&nbsp; &nbsp;&nbsp;<b>支撑性</b><br/>
-                                          对于需要额外支撑的轮椅用户，定位安全绑带可以提供额外的支撑和平衡。
+                                                对于需要额外支撑的轮椅用户，定位安全绑带可以提供额外的支撑和平衡。
 
 
                                             </p>
                                             <p>
                                                 &nbsp;&nbsp; &nbsp;&nbsp;<b>舒适性</b><br>
-                                   定位安全绑带软垫可以更好地适应轮椅使用者的身体形态，缓解轮椅使用者长时间坐着带来的压力和不适，提供稳定的支撑和舒适的使用体验。
+                                                定位安全绑带软垫可以更好地适应轮椅使用者的身体形态，缓解轮椅使用者长时间坐着带来的压力和不适，提供稳定的支撑和舒适的使用体验。
                                             </p>
                                             <p>
                                                 &nbsp;&nbsp; &nbsp;&nbsp;<b>透气性</b><br>
-                                         高密度泡棉具有良好的透气性，可以减少轮椅使用者在长时间使用时产生的汗液和不适感，保持舒适的使用体验
+                                                高密度泡棉具有良好的透气性，可以减少轮椅使用者在长时间使用时产生的汗液和不适感，保持舒适的使用体验
 
                                             </p>
                                             <p>
                                                 &nbsp;&nbsp; &nbsp;&nbsp;<b>耐用性</b><br>
-                                        高密度泡棉具有良好的耐磨性和耐用性，可以在长时间使用中保持良好的支撑和形状，减少维护和更换的需求
+                                                高密度泡棉具有良好的耐磨性和耐用性，可以在长时间使用中保持良好的支撑和形状，减少维护和更换的需求
 
                                             </p>
                                         </div>
@@ -1195,8 +1192,8 @@
                         <div class="field field--name-product-links field--type-ds field--label-hidden">
                             <div class="field__items">
                                 <div class="field__item even">
-<!--                                    <a class="book-appointment product-colorbox" href="#">查看详情 <i-->
-<!--                                            class="fa fa-calendar" aria-hidden="true"></i></a>-->
+                                    <!--                                    <a class="book-appointment product-colorbox" href="#">查看详情 <i-->
+                                    <!--                                            class="fa fa-calendar" aria-hidden="true"></i></a>-->
                                     <ul class="product-links">
                                         <li>
                                             <a class="product-colorbox" href="#">购买</a>
@@ -1236,12 +1233,14 @@
                                     <p><br>腿部定位安全绑带适合那些需要在轮椅上长时间坐着的人群，特别是对于那些因为肌肉或者神经疾病导致腿部不能正常支撑的患者来说是非常有用的。
 
                                     </p><br>
-<p>腿部定位安全绑带的主要作用是确保患者的腿部固定在轮椅上，保证他们的坐姿正确且舒适。这种绑带可以帮助这些患者保持正确的坐姿，避免他们的腿部滑落或者误动造成伤害。腿部定位安全绑带也适用于那些需要在运动中维持稳定坐姿的人群，例如参加运动比赛的轮椅运动员等。
-</p>
+                                    <p>
+                                        腿部定位安全绑带的主要作用是确保患者的腿部固定在轮椅上，保证他们的坐姿正确且舒适。这种绑带可以帮助这些患者保持正确的坐姿，避免他们的腿部滑落或者误动造成伤害。腿部定位安全绑带也适用于那些需要在运动中维持稳定坐姿的人群，例如参加运动比赛的轮椅运动员等。
+                                    </p>
                                 </div>
                                 <div style="height: 10px;"></div>
 
-                            </div></div>
+                            </div>
+                        </div>
 
 
                         <div id="node-product-full-group-product-accessories"
@@ -1264,7 +1263,7 @@
                                                     <div class="flex-viewport"
                                                          style="overflow: hidden; position: relative;">
                                                         <ul class="slides"
-                                                            style="width: 3400%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                            style="width: 120%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                             <li
                                                                     style="width: 175px; float: left; display: block;">
 
@@ -1318,7 +1317,6 @@
                                                             </li>
 
 
-
                                                         </ul>
                                                     </div>
 
@@ -1334,7 +1332,8 @@
                             <h3><span>尺寸规格</span>
                             </h3>
                             <div class="center-image">
-                                <img src="../images/products/bind/脚部安全绑带/15尺寸图.png" height="600" width="900"/></div>
+                                <img src="../images/products/bind/脚部安全绑带/15尺寸图.png" height="600" width="900"/>
+                            </div>
 
                         </div>
                     </div>
