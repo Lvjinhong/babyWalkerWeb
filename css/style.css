@@ -708,7 +708,7 @@ p.w3ls-p {
 }
 
 .w3_agile_services_bottom_right_grid {
-    background: url(../images/products/Chair/index.png) no-repeat 0px 0px;
+    background: url(../images/2.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -717,7 +717,7 @@ p.w3ls-p {
 }
 
 .w3_agile_services_bottom_right_grid1 {
-    background: url(../images/products/Chair/index.png) no-repeat 0px 0px;
+    background: url(../images/3.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -726,7 +726,7 @@ p.w3ls-p {
 }
 
 .w3_agile_services_bottom_right_grid2 {
-    background: url(../images/products/Chair/index.png) no-repeat 0px 0px;
+    background: url(../images/1.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -4408,13 +4408,11 @@ a.at300m .at4-icon {
     position: relative;
     overflow: hidden;
 }
-
 @media (min-width: 769px) {
     #carousel {
         width: 50%;
     }
 }
-
 .slide {
     width: 100%;
     height: 500px;
@@ -4434,17 +4432,13 @@ a.at300m .at4-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    /* 需要给div一个高度，否则flex布局可能无法正常工作 */
+    height: 100%; /* 需要给div一个高度，否则flex布局可能无法正常工作 */
 }
 
 .center-image img {
-    max-width: 100%;
-    /* 防止图片超出其容器 */
-    max-height: 100%;
-    /* 防止图片超出其容器 */
+    max-width: 100%; /* 防止图片超出其容器 */
+    max-height: 100%; /* 防止图片超出其容器 */
 }
-
-.product-space {
+.product-space{
     height: 220px;
 }
