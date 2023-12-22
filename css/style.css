@@ -52,7 +52,7 @@ input[type="reset"],
 
 /*-- banner --1600*1012 */
 .banner {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -63,7 +63,7 @@ input[type="reset"],
 }
 
 .banner1 {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -102,8 +102,10 @@ input[type="reset"],
 .navbar-brand {
     height: 48px;
     padding: 0px;
-    font-size: 46px;
-    line-height: 46px;
+    /*font-size: 46px;*/
+    /*line-height: 46px;*/
+    font-size: 30px;
+    line-height: 35px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
